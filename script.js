@@ -1,5 +1,6 @@
 const API_KEY = "499d03534f224e8890dcd1f95376001c"
-const url = "https://newsapi.org/v2/everything?q="
+// const url = "https://newsapi.org/v2/everything?q="
+const url = "http://newsapi.org/v2/everything?q="
 let main=document.querySelector("main")
 
 async function fetchData(query){
