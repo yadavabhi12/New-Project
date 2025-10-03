@@ -2,9 +2,11 @@ const API_KEY = "499d03534f224e8890dcd1f95376001c"
 // const url = "https://newsapi.org/v2/everything?q="
 const url = "http://newsapi.org/v2/everything?q="
 let main=document.querySelector("main")
+https://newsapi.org/v2/everything?q=ipl&apiKey=499d03534f224e8890dcd1f95376001c
 
 async function fetchData(query){
-    const res = await fetch(`${url}${query}&apiKey=${API_KEY}`)
+    // const res = await fetch(`${url}${query}&apiKey=${API_KEY}`)
+      const res = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=499d03534f224e8890dcd1f95376001c`)
     const data = await res.json()
     return data
 }
@@ -73,5 +75,6 @@ async function Search(query){
     const data = await fetchData(query)
     renderMain(data.articles)
 }
+
 
 
