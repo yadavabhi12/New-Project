@@ -23,60 +23,59 @@
       rel="stylesheet"
     />
 
-    <!---css style-->
+    <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-       <div class="navbar">
-        <h2 class="text" style="color: rgb(27, 30, 240);">News Paper
-        
-        </h2>
+      <div class="navbar">
+        <h2 class="text" style="color: rgb(27, 30, 240);">News Paper</h2>
 
-      <div class="inputSearch desktop">
-        <form id="searchForm">
-          <input type="text" placeholder="Type to search..." id="searchInput" />
-          <span> <i class="fa-solid fa-search"></i></span>
-        </form>
+        <!-- Desktop Search -->
+        <div class="inputSearch desktop">
+          <form id="searchForm">
+            <input type="text" placeholder="Type to search..." id="searchInput" />
+            <span><i class="fa-solid fa-search"></i></span>
+          </form>
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="desktop">
+          <ul>
+            <li onclick="Search('tech')">Tech</li>
+            <li onclick="Search('food')">Food</li>
+            <li onclick="Search('movies')">Movies</li>
+            <li onclick="Search('business')">Business</li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <div class="menuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
-      <nav class="desktop">
-        <ul>
-          <!-- <li onclick="Search('ipl2023')">IPL 2023</li> -->
-          <li class="a" onclick="Search('tech')">Tech</li>
-          <li class="a" onclick="Search('food')">Food</li>
-          <li class="a" onclick="Search('movies')">Movies</li>
-          <li class="a" onclick="Search('business')">Business</li>
-        </ul>
-      </nav>
 
-      <div class="menuBtn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-       </div>
-
-      <!------>
+      <!-- Mobile Menu -->
       <div class="mobile hidden">
         <nav>
           <ul>
-            <!-- <li onclick="Search('ipl2023')">IPL 2023</li> -->
-            <li class="b"  onclick="Search('tech')">Tech</li>
-            <li class="b" onclick="Search('food')">Food</li>
-            <li class="b" onclick="Search('movies')">Movies</li>
-            <li class="b" onclick="Search('business')">Business</li>
+            <li onclick="Search('tech')">Tech</li>
+            <li onclick="Search('food')">Food</li>
+            <li onclick="Search('movies')">Movies</li>
+            <li onclick="Search('business')">Business</li>
           </ul>
         </nav>
         <div class="inputSearch">
-        <form id="searchFormMobile" id="searchInputMobile">
-          <input type="text" placeholder="Type to search..." />
-          <span> <i class="fa-solid fa-search"></i></span>
+          <form id="searchFormMobile">
+            <input type="text" placeholder="Type to search..." id="searchInputMobile" />
+            <span><i class="fa-solid fa-search"></i></span>
+          </form>
         </div>
-        </form>
       </div>
     </header>
 
-    <!-- main  -->
-
-    <main ></main>
+    <!-- Main News Section -->
+    <main></main>
 
     <script src="script.js"></script>
   </body>
